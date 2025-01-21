@@ -37,9 +37,9 @@ void insertAtPos(int pos, int x)
    
     if(pos == 1)
     {
-        newNode->next = head;
-         head = newNode;
-         return;
+    	newNode->next = head;
+    	head = newNode;
+        return;
     }
     Node *temp = head;
    
@@ -63,13 +63,49 @@ void show()
     cout<<endl<<endl;
 }
 
-int main()
-{
-	int enter;
-	cout<<"enter any number";
-	cin>>enter;
-while(enter==1){
-	insert(12);
-}
-     
+int main(){
+	int i=1;
+	int x,pos;
+	while(i){
+		cout<<"enter 1 for insert data at first position in linked list"<<endl;
+		cout<<"enter 2 for insert data at last position in linked list"<<endl;
+		cout<<"enter 3 for insert data at user choice position in linked list"<<endl;
+		cout<<"enter 4 for display data in linked list"<<endl;
+		cout<<"enter 0 for exit"<<endl;
+		
+		cin>>i;
+		if(i==1)
+		{
+		cout<<"enter the value of data"<<endl;
+		cin>>x;
+		insert(x);
+		}else if(i==2)
+		{
+		cout<<"enter the value of data"<<endl;
+		cin>>x;
+		insertAE(x);
+		}else if(i==3)
+		{
+		cout<<"enter the value of data"<<endl;
+		cin>>(x);
+		cout<<"enter the position of insert data"<<endl;
+		cin>>pos;
+		insertAtPos(pos,x);	
+		}else if(i==4)
+		{
+			cout<<" data in liked list : "<<endl;
+			show();	
+		}
+		else if(i==0)
+		{
+			cout<<"exit ...."<<endl;
+			break;
+		}
+		else
+		{
+		cout<<"please enter a valid number\n"<<endl;	
+		}	
+	}
+	return 0;
+	
 }
