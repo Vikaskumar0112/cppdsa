@@ -7,7 +7,7 @@ int arr[] = {32,4,5 , 60};
 	int s = sizeof(arr)/4;
 	int t;
 	
-	cout<<"Before Sort : "<<endl;
+	cout<<"Before  Sort : "<<endl;
 	for(int i=0; i<s; i++) cout<<arr[i]<<" ";
 	cout<<endl;
 	
