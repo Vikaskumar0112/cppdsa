@@ -26,6 +26,5 @@ int arr[] = {32,4,5 , 60};
 	cout<<"After Sort: "<<endl;
 	for(int i=0; i<s; i++) cout<<arr[i]<<" ";
 	cout<<endl;
-	cout<<endl;
  	
 }
